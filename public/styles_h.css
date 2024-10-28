@@ -1,0 +1,87 @@
+/* Reset 기본 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+}
+
+h1 {
+  color: #333;
+  margin-top: 20px;
+}
+
+/* 네비게이션 바 스타일 */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  padding: 10px;
+}
+
+.navbar button {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+/* 컨텐츠 영역 스타일 */
+.content {
+  display: none;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 지문 등록, 관리, 출입 기록 메시지 출력 스타일 */
+#serialOutput,
+#fingerprintList,
+#accessLog {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.serial-entry {
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+/* 예시: styles_h.css */
+.content {
+  display: none; /* 기본적으로 모든 content 요소를 숨김 */
+}
+
+/* 선택된 메뉴 활성화 시 표시 */
+.active {
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+}

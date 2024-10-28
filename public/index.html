@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지문 인식 시스템</title>
+    <link rel="stylesheet" href="styles_h.css" />
+  </head>
+  <body>
+    <h1>지문 인식 시스템</h1>
+
+    <div class="navbar">
+      <button id="registerBtn" onclick="showContent('register')">
+        지문 등록
+      </button>
+      <button id="manageBtn" onclick="showContent('manage')">지문 관리</button>
+      <button id="logBtn" onclick="showContent('log')">출입 기록</button>
+    </div>
+
+    <div id="register" class="content">
+      <h2>지문 등록</h2>
+      <button onclick="registerFingerprint()">지문 등록 시작</button>
+      <div id="serialOutput"></div>
+    </div>
+
+    <div id="manage" class="content">
+      <h2>지문 관리</h2>
+      <div id="fingerprintList"><p>등록된 지문이 없습니다.</p></div>
+    </div>
+
+    <div id="log" class="content">
+      <h2>출입 기록</h2>
+      <div id="accessLog"></div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
